@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { Code, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useConfig } from '@/hooks/useConfig';

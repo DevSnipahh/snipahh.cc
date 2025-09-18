@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SiDiscord, SiRoblox } from 'react-icons/si';
