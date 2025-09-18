@@ -1,88 +1,109 @@
+
 import { useState, useEffect } from 'react';
 
-interface ConfigData {
-  developer: {
-    name: string;
-    username: string;
-    displayName: string;
-    title: string;
-    bio: string;
-  };
-  hero: {
-    title: string;
-    subtitle: string;
-    primaryButton: string;
-    secondaryButton: string;
-  };
-  about: {
-    intro: string;
-    experience: string;
-    commitment: string;
-  };
-  skills: Array<{
-    name: string;
-    description: string;
-    icon: string;
-  }>;
-  projects: Array<{
-    title: string;
-    description: string;
-    technologies: string[];
-    stats: string;
-    category: string;
-  }>;
-  services: Array<{
-    name: string;
-    price: string;
-    period: string;
-    features: string[];
-    popular: boolean;
-  }>;
-  stats: {
-    projects: string;
-    experience: string;
-    satisfaction: string;
-    languages: string;
-  };
-  trustedProjects: {
-    title: string;
-    subtitle: string;
-    communities: Array<{
-      name: string;
-      players: string;
-      icon: string;
-    }>;
-  };
-  contact: {
-    discord: string;
-    roblox: string;
-    github: string;
-    twitter: string;
-  };
+interface Developer {
+  name: string;
+  username: string;
+  displayName: string;
+  title: string;
+  bio: string;
+}
+
+interface Hero {
+  title: string;
+  subtitle: string;
+  primaryButton: string;
+  secondaryButton: string;
+}
+
+interface About {
+  intro: string;
+  experience: string;
+  commitment: string;
+}
+
+interface Skill {
+  name: string;
+  description: string;
+  icon: string;
+}
+
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  stats: string;
+  category: string;
+}
+
+interface Service {
+  name: string;
+  price: string;
+  period: string;
+  features: string[];
+  popular: boolean;
+}
+
+interface Stats {
+  projects: string;
+  experience: string;
+  satisfaction: string;
+  languages: string;
+}
+
+interface Community {
+  name: string;
+  players: string;
+  icon: string;
+}
+
+interface TrustedProjects {
+  title: string;
+  subtitle: string;
+  communities: Community[];
+}
+
+interface Contact {
+  discord: string;
+  roblox: string;
+  github: string;
+  twitter: string;
+}
+
+interface Config {
+  developer: Developer;
+  hero: Hero;
+  about: About;
+  skills: Skill[];
+  projects: Project[];
+  services: Service[];
+  stats: Stats;
+  trustedProjects: TrustedProjects;
+  contact: Contact;
 }
 
 export function useConfig() {
-  const [config, setConfig] = useState<ConfigData | null>(null);
+  const [config, setConfig] = useState<Config | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const loadConfig = async () => {
+    const fetchConfig = async () => {
       try {
-        const response = await fetch(`${(import.meta as any).env.BASE_URL || './'}config.json`);
+        const response = await fetch('/config.json');
         if (!response.ok) {
-          throw new Error('Failed to load configuration');
+          throw new Error('Failed to fetch config');
         }
         const data = await response.json();
         setConfig(data);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load configuration');
+        setError(err instanceof Error ? err.message : 'Unknown error');
       } finally {
         setLoading(false);
       }
     };
 
-    loadConfig();
+    fetchConfig();
   }, []);
 
   return { config, loading, error };
