@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { SiDiscord, SiRoblox, SiGithub, SiX } from 'react-icons/si';
 import { useConfig } from '@/hooks/useConfig';
 
