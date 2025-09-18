@@ -1,0 +1,126 @@
+
+{
+  "personal": {
+    "name": "Snipahh",
+    "title": "Professional Roblox Developer",
+    "description": "Experienced Roblox game developer specializing in Lua, LuaU, and Python. Creating engaging, high-performance games with custom scripts and systems.",
+    "avatar": "/avatar.jpg",
+    "location": "Available Worldwide",
+    "languages": ["English"],
+    "timezone": "EST"
+  },
+  "contact": {
+    "discord": "snipahh",
+    "roblox": "https://www.roblox.com/users/YOUR_USER_ID/profile",
+    "github": "https://github.com/snipahh",
+    "email": "contact@snipahh.dev"
+  },
+  "skills": [
+    {
+      "name": "Lua/LuaU",
+      "level": 95,
+      "category": "Programming"
+    },
+    {
+      "name": "Python",
+      "level": 85,
+      "category": "Programming"
+    },
+    {
+      "name": "Roblox Studio",
+      "level": 98,
+      "category": "Development Tools"
+    },
+    {
+      "name": "Game Design",
+      "level": 90,
+      "category": "Design"
+    },
+    {
+      "name": "3D Modeling",
+      "level": 75,
+      "category": "Design"
+    },
+    {
+      "name": "UI/UX Design",
+      "level": 80,
+      "category": "Design"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Adventure RPG",
+      "description": "A comprehensive RPG system with quests, inventory, combat, and progression systems.",
+      "image": "/projects/rpg-game.jpg",
+      "technologies": ["Lua", "Roblox Studio", "DataStore2"],
+      "status": "completed",
+      "link": "https://www.roblox.com/games/YOUR_GAME_ID",
+      "featured": true
+    },
+    {
+      "id": "project-2", 
+      "title": "Racing Simulator",
+      "description": "High-performance racing game with realistic physics and multiplayer support.",
+      "image": "/projects/racing-game.jpg",
+      "technologies": ["LuaU", "Physics", "Networking"],
+      "status": "completed",
+      "link": "https://www.roblox.com/games/YOUR_GAME_ID",
+      "featured": true
+    },
+    {
+      "id": "project-3",
+      "title": "Tycoon Builder",
+      "description": "Business simulation tycoon with complex economy and automation systems.",
+      "image": "/projects/tycoon-game.jpg", 
+      "technologies": ["Lua", "DataStores", "GUI"],
+      "status": "in-progress",
+      "link": "https://www.roblox.com/games/YOUR_GAME_ID",
+      "featured": false
+    }
+  ],
+  "services": [
+    {
+      "id": "service-1",
+      "title": "Custom Game Development",
+      "description": "Complete game development from concept to launch, including gameplay mechanics, UI/UX, and backend systems.",
+      "price": "Starting at $500",
+      "duration": "2-8 weeks",
+      "features": [
+        "Game concept & design",
+        "Complete Lua/LuaU development",
+        "Custom UI/UX design", 
+        "Testing & optimization",
+        "Launch support"
+      ]
+    },
+    {
+      "id": "service-2",
+      "title": "Script Development",
+      "description": "Custom scripts and systems for existing games, including combat, inventory, and data management systems.",
+      "price": "Starting at $150",
+      "duration": "1-3 weeks",
+      "features": [
+        "Custom Lua scripts",
+        "Performance optimization",
+        "Bug fixes & debugging",
+        "Documentation",
+        "Ongoing support"
+      ]
+    },
+    {
+      "id": "service-3",
+      "title": "Game Optimization",
+      "description": "Performance optimization for existing games to improve frame rates and reduce lag.",
+      "price": "Starting at $200",
+      "duration": "1-2 weeks", 
+      "features": [
+        "Performance analysis",
+        "Code optimization",
+        "Memory management",
+        "Network optimization",
+        "Testing & validation"
+      ]
+    }
+  ]
+}
