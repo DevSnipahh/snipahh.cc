@@ -1,126 +1,165 @@
-
 {
-  "personal": {
+  "developer": {
     "name": "Snipahh",
-    "title": "Professional Roblox Developer",
-    "description": "Experienced Roblox game developer specializing in Lua, LuaU, and Python. Creating engaging, high-performance games with custom scripts and systems.",
-    "avatar": "/avatar.jpg",
-    "location": "Available Worldwide",
-    "languages": ["English"],
-    "timezone": "EST"
+    "username": "@devsnipahh",
+    "displayName": "Snipahh",
+    "title": "Roblox Developer & Scripter",
+    "bio": "Professional Lua, LuaU, and Python programmer specializing in Roblox game development"
   },
-  "contact": {
-    "discord": "snipahh",
-    "roblox": "https://www.roblox.com/users/YOUR_USER_ID/profile",
-    "github": "https://github.com/snipahh",
-    "email": "contact@snipahh.dev"
+  "hero": {
+    "title": "Next-Gen Roblox Development",
+    "subtitle": "Experience high-quality game development on Roblox. Professional, reliable, and completely customized to your vision.",
+    "primaryButton": "View My Work",
+    "secondaryButton": "Contact Me →"
+  },
+  "about": {
+    "intro": "I'm a passionate Roblox developer specializing in Lua, LuaU, and Python with over 3 years of experience creating engaging games and complex systems.",
+    "experience": "My expertise spans from simple scripts to full-scale game development, with a focus on performance optimization, security, and user experience.",
+    "commitment": "I'm committed to delivering high-quality code that not only works perfectly but is also maintainable and scalable for future updates."
   },
   "skills": [
     {
-      "name": "Lua/LuaU",
-      "level": 95,
-      "category": "Programming"
+      "name": "Expert Lua/LuaU",
+      "description": "Advanced scripting with optimal performance and clean, maintainable code structure.",
+      "icon": "code"
     },
     {
-      "name": "Python",
-      "level": 85,
-      "category": "Programming"
+      "name": "Python Integration",
+      "description": "Backend automation, data processing, and external API integrations for enhanced gameplay.",
+      "icon": "python"
     },
     {
-      "name": "Roblox Studio",
-      "level": 98,
-      "category": "Development Tools"
+      "name": "Game Mechanics",
+      "description": "Complex gameplay systems, UI/UX design, and player progression mechanics.",
+      "icon": "gamepad"
     },
     {
-      "name": "Game Design",
-      "level": 90,
-      "category": "Design"
+      "name": "DataStore Management",
+      "description": "Efficient data handling, player save systems, and cross-server communication.",
+      "icon": "database"
     },
     {
-      "name": "3D Modeling",
-      "level": 75,
-      "category": "Design"
+      "name": "Anti-Exploit Security",
+      "description": "Robust security measures to protect against cheating and maintain fair gameplay.",
+      "icon": "shield"
     },
     {
-      "name": "UI/UX Design",
-      "level": 80,
-      "category": "Design"
+      "name": "Custom Tools & Systems",
+      "description": "Bespoke development tools, admin panels, and automated testing systems.",
+      "icon": "cogs"
     }
   ],
   "projects": [
     {
-      "id": "project-1",
-      "title": "Adventure RPG",
-      "description": "A comprehensive RPG system with quests, inventory, combat, and progression systems.",
-      "image": "/projects/rpg-game.jpg",
-      "technologies": ["Lua", "Roblox Studio", "DataStore2"],
-      "status": "completed",
-      "link": "https://www.roblox.com/games/YOUR_GAME_ID",
-      "featured": true
+      "title": "Mystical Realms RPG",
+      "description": "A comprehensive RPG system with custom combat, questing, and character progression.",
+      "technologies": ["Lua", "UI Design", "Combat System"],
+      "stats": "12.5K+ plays",
+      "category": "RPG"
     },
     {
-      "id": "project-2", 
-      "title": "Racing Simulator",
-      "description": "High-performance racing game with realistic physics and multiplayer support.",
-      "image": "/projects/racing-game.jpg",
-      "technologies": ["LuaU", "Physics", "Networking"],
-      "status": "completed",
-      "link": "https://www.roblox.com/games/YOUR_GAME_ID",
-      "featured": true
+      "title": "Trading Card Simulator",
+      "description": "Advanced trading system with real-time marketplace and card rarity mechanics.",
+      "technologies": ["LuaU", "DataStore", "Trading System"],
+      "stats": "28.3K+ plays",
+      "category": "Simulator"
     },
     {
-      "id": "project-3",
-      "title": "Tycoon Builder",
-      "description": "Business simulation tycoon with complex economy and automation systems.",
-      "image": "/projects/tycoon-game.jpg", 
-      "technologies": ["Lua", "DataStores", "GUI"],
-      "status": "in-progress",
-      "link": "https://www.roblox.com/games/YOUR_GAME_ID",
-      "featured": false
+      "title": "Admin Command Suite",
+      "description": "Comprehensive admin toolkit with permissions system and advanced moderation tools.",
+      "technologies": ["Lua", "Security", "Open Source"],
+      "stats": "5.7K+ downloads",
+      "category": "Tool"
     }
   ],
   "services": [
     {
-      "id": "service-1",
-      "title": "Custom Game Development",
-      "description": "Complete game development from concept to launch, including gameplay mechanics, UI/UX, and backend systems.",
-      "price": "Starting at $500",
-      "duration": "2-8 weeks",
+      "name": "Basic Scripts",
+      "price": "$15",
+      "period": "/script",
       "features": [
-        "Game concept & design",
-        "Complete Lua/LuaU development",
-        "Custom UI/UX design", 
-        "Testing & optimization",
-        "Launch support"
-      ]
+        "Simple gameplay mechanics",
+        "Basic UI implementation",
+        "Code documentation",
+        "1 week delivery"
+      ],
+      "popular": false
     },
     {
-      "id": "service-2",
-      "title": "Script Development",
-      "description": "Custom scripts and systems for existing games, including combat, inventory, and data management systems.",
-      "price": "Starting at $150",
-      "duration": "1-3 weeks",
+      "name": "Advanced Systems",
+      "price": "$75",
+      "period": "/system",
       "features": [
-        "Custom Lua scripts",
-        "Performance optimization",
-        "Bug fixes & debugging",
-        "Documentation",
-        "Ongoing support"
-      ]
+        "Complex game mechanics",
+        "DataStore integration",
+        "Custom UI/UX design",
+        "Anti-exploit protection",
+        "2-3 weeks delivery",
+        "Discord support"
+      ],
+      "popular": true
     },
     {
-      "id": "service-3",
-      "title": "Game Optimization",
-      "description": "Performance optimization for existing games to improve frame rates and reduce lag.",
-      "price": "Starting at $200",
-      "duration": "1-2 weeks", 
+      "name": "Full Game Development",
+      "price": "$200",
+      "period": "+/project",
       "features": [
-        "Performance analysis",
-        "Code optimization",
-        "Memory management",
-        "Network optimization",
-        "Testing & validation"
-      ]
+        "Complete game development",
+        "Custom admin tools",
+        "Monetization systems",
+        "Analytics integration",
+        "Ongoing support",
+        "Priority development"
+      ],
+      "popular": false
     }
-  ]
+  ],
+  "stats": {
+    "projects": "50+",
+    "experience": "3+",
+    "satisfaction": "100%",
+    "languages": "3"
+  },
+  "trustedProjects": {
+    "title": "Trusted by Amazing Roblox Communities",
+    "subtitle": "Created for over 50+ games and counting.",
+    "communities": [
+      {
+        "name": "Epic Adventures RPG",
+        "players": "25.6K active players",
+        "icon": "gamepad"
+      },
+      {
+        "name": "Combat Legends",
+        "players": "18.2K active players",
+        "icon": "sword"
+      },
+      {
+        "name": "Space Simulator Pro",
+        "players": "42.1K active players",
+        "icon": "rocket"
+      },
+      {
+        "name": "Medieval Kingdom",
+        "players": "31.8K active players",
+        "icon": "crown"
+      },
+      {
+        "name": "Racing Championship",
+        "players": "15.3K active players",
+        "icon": "car"
+      },
+      {
+        "name": "Tycoon Empire",
+        "players": "38.9K active players",
+        "icon": "building"
+      }
+    ]
+  },
+  "contact": {
+    "discord": "devsnipahh",
+    "roblox": "https://www.roblox.com/users/example",
+    "github": "https://github.com/devsnipahh",
+    "twitter": "https://twitter.com/devsnipahh"
+  }
 }
