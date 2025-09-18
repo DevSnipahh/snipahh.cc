@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold"
+            className="bg-primary hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 text-primary-foreground px-8 py-4 text-lg font-semibold transition-all duration-300"
             data-testid="button-view-work"
           >
             {config.hero.primaryButton}
