@@ -69,7 +69,7 @@ export function useConfig() {
   useEffect(() => {
     const loadConfig = async () => {
       try {
-        const response = await fetch('/config.json');
+        const response = await fetch(`${(import.meta as any).env.BASE_URL || './'}config.json`);
         if (!response.ok) {
           throw new Error('Failed to load configuration');
         }
