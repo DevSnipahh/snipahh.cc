@@ -60,22 +60,6 @@
       "stats": "1.7K+ plays",
       "category": "Hangout",
       "thumbnail": "/icons/projects/Error.png"
-    },
-    {
-      "title": "Trading Card Simulator",
-      "description": "Advanced trading system with real-time marketplace and card rarity mechanics.",
-      "technologies": ["LuaU", "DataStore", "Trading System"],
-      "stats": "28.3K+ plays",
-      "category": "Simulator",
-      "thumbnail": "/icons/projects/trading-card-sim.jpg"
-    },
-    {
-      "title": "DevSnipahh Admin Suite",
-      "description": "My signature admin toolkit combining Lua/LuaU frontend with Python backend for advanced moderation and analytics.",
-      "technologies": ["Lua", "Python", "Security", "Open Source"],
-      "stats": "5.7K+ downloads",
-      "category": "Tool",
-      "thumbnail": "/icons/projects/admin-suite.jpg"
     }
   ],
   "services": [
