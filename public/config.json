@@ -22,34 +22,34 @@
   },
   "skills": [
     {
-      "name": "Expert Lua/LuaU",
+      "title": "Expert Lua/LuaU",
       "description": "Advanced scripting with optimal performance and clean, maintainable code structure.",
-      "icon": "/icons/lua-icon.svg"
+      "icon": "lua"
     },
     {
-      "name": "Python Backend Systems",
+      "title": "Python Backend Systems",
       "description": "Custom Python servers for game analytics, player data processing, and third-party API integrations.",
-      "icon": "/icons/python-icon.svg"
+      "icon": "python"
     },
     {
-      "name": "Game Mechanics",
+      "title": "Game Mechanics",
       "description": "Complex gameplay systems, UI/UX design, and player progression mechanics.",
-      "icon": "/icons/gamepad-icon.svg"
+      "icon": "gamepad"
     },
     {
-      "name": "DataStore Management",
+      "title": "DataStore Management",
       "description": "Efficient data handling, player save systems, and cross-server communication.",
-      "icon": "/icons/database-icon.svg"
+      "icon": "database"
     },
     {
-      "name": "Anti-Exploit Security",
+      "title": "Anti-Exploit Security",
       "description": "Robust security measures to protect against cheating and maintain fair gameplay.",
-      "icon": "/icons/shield-icon.svg"
+      "icon": "security"
     },
     {
-      "name": "Custom Tools & Systems",
+      "title": "Custom Tools & Systems",
       "description": "Bespoke development tools, admin panels, and automated testing systems.",
-      "icon": "/icons/tools-icon.svg"
+      "icon": "cogs"
     }
   ],
   "projects": [

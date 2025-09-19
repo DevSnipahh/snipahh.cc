@@ -1,22 +1,25 @@
 import * as React from 'react';
 import { 
-  Code, 
+  Code2, 
   Database, 
   Shield, 
-  Settings,
   Gamepad2,
   Server,
-  Wrench
+  Wrench,
+  Brain,
+  Lock
 } from 'lucide-react';
 import { useConfig } from '@/hooks/useConfig';
 
 const iconMap = {
-  code: Code,
+  code: Code2,
   python: Server,
   gamepad: Gamepad2,
   database: Database,
-  shield: Shield,
+  shield: Lock,
   cogs: Wrench,
+  lua: Brain,
+  security: Shield,
 };
 
 export default function Skills() {
