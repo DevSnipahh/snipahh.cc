@@ -51,13 +51,7 @@ export default function ServicesSection() {
                 ))}
               </ul>
               
-              <Button
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 font-semibold"
-                data-testid={`button-choose-${service.name.toLowerCase().replace(/\s+/g, '-')}`}
-              >
-                {service.name === 'Full Game Development' ? 'Contact for Quote' : 
-                 service.popular ? `Choose ${service.name}` : 'Get Started'}
-              </Button>
+              
             </div>
           ))}
         </div>

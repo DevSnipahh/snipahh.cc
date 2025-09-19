@@ -50,8 +50,8 @@ export default function Skills() {
                 <div className={`w-16 h-16 ${colorClass} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                   <IconComponent size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">{skill.name}</h3>
-                <p className="text-muted-foreground">{skill.description}</p>
+                <h3 className="text-xl font-semibold mb-4 text-primary">{skill.name}</h3>
+                <p className="text-primary/80">{skill.description}</p>
               </div>
             );
           })}

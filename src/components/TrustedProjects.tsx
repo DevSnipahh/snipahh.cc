@@ -56,7 +56,7 @@ export default function TrustedProjects() {
               return (
                 <div
                   key={`${community.name}-${index}`}
-                  className="flex-shrink-0 w-[260px] bg-[#1c1d1f] border border-white/10 rounded-xl p-4 flex items-center gap-4"
+                  className="flex-shrink-0 w-[260px] glass-card rounded-xl p-4 flex items-center gap-4"
                   data-testid={`community-card-${community.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">

@@ -55,15 +55,8 @@ export default function ProjectsShowcase() {
                       );
                     })}
                   </div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-center">
                     <span className="text-muted-foreground">{project.stats}</span>
-                    <Button
-                      variant="ghost"
-                      className="text-primary hover:text-primary/80 p-0 h-auto"
-                      data-testid={`button-view-project-${project.title.toLowerCase().replace(/\s+/g, '-')}`}
-                    >
-                      View Project <ArrowRight className="ml-1" size={16} />
-                    </Button>
                   </div>
                 </div>
               </div>
