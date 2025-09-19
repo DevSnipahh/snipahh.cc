@@ -4,7 +4,7 @@
     "username": "@devsnipahh",
     "displayName": "Snipahh",
     "title": "Roblox Developer & Scripter",
-    "bio": "Professional Lua, LuaU, and Python programmer specializing in Roblox game development"
+    "bio": "DevSnipahh - Professional Roblox scripter specializing in Lua/LuaU frontend systems and Python backend infrastructure"
   },
   "hero": {
     "title": "Next-Gen Roblox Development Experience",
@@ -17,9 +17,9 @@
     "trustText": "Trusted by over 50+ Roblox games and counting."
   },
   "about": {
-    "intro": "I'm a passionate Roblox developer specializing in Lua, LuaU, and Python with over 3 years of experience creating engaging games and complex systems.",
-    "experience": "My expertise spans from simple scripts to full-scale game development, with a focus on performance optimization, security, and user experience.",
-    "commitment": "I'm committed to delivering high-quality code that not only works perfectly but is also maintainable and scalable for future updates."
+    "intro": "I'm DevSnipahh, a dedicated Roblox developer known for creating robust game systems using Lua/LuaU for frontend gameplay and Python for backend infrastructure and automation.",
+    "experience": "My unique approach combines in-game Roblox scripting with external Python services, enabling advanced features like real-time analytics, automated moderation, and cross-platform integrations.",
+    "commitment": "I deliver production-ready code that scales with your game's growth, backed by comprehensive documentation and ongoing support."
   },
   "skills": [
     {
@@ -28,8 +28,8 @@
       "icon": "code"
     },
     {
-      "name": "Python Integration",
-      "description": "Backend automation, data processing, and external API integrations for enhanced gameplay.",
+      "name": "Python Backend Systems",
+      "description": "Custom Python servers for game analytics, player data processing, and third-party API integrations.",
       "icon": "python"
     },
     {
@@ -69,9 +69,9 @@
       "category": "Simulator"
     },
     {
-      "title": "Admin Command Suite",
-      "description": "Comprehensive admin toolkit with permissions system and advanced moderation tools.",
-      "technologies": ["Lua", "Security", "Open Source"],
+      "title": "DevSnipahh Admin Suite",
+      "description": "My signature admin toolkit combining Lua/LuaU frontend with Python backend for advanced moderation and analytics.",
+      "technologies": ["Lua", "Python", "Security", "Open Source"],
       "stats": "5.7K+ downloads",
       "category": "Tool"
     }
