@@ -27,24 +27,24 @@ export default function ServicesSection() {
                   </span>
                 </div>
               )}
-              
+
               <div className="mb-6">
-                <h3 className="text-2xl font-bold mb-2">{service.name}</h3>
+                <h3 className="text-2xl font-bold mb-2 text-primary">{service.name}</h3>
                 <div className="text-4xl font-bold gradient-text mb-4">
-                  {service.price}<span className="text-lg text-muted-foreground">{service.period}</span>
+                  {service.price}<span className="text-lg text-primary/70">{service.period}</span>
                 </div>
               </div>
-              
+
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-center">
                     <Check className="text-primary mr-3 flex-shrink-0" size={20} />
-                    <span>{feature}</span>
+                    <span className="text-sm text-primary/80">{feature}</span>
                   </li>
                 ))}
               </ul>
-              
-              
+
+
             </div>
           ))}
         </div>

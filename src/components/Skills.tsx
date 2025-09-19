@@ -34,12 +34,6 @@ export default function Skills() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {config.skills.map((skill, index) => {
             const IconComponent = iconMap[skill.icon as keyof typeof iconMap] || Code;
-            const colorClasses = [
-              'bg-primary/20 text-primary',
-              'bg-secondary/20 text-secondary',
-              'bg-accent/20 text-accent',
-            ];
-            const colorClass = colorClasses[index % 3];
 
             return (
               <div 
@@ -47,7 +41,7 @@ export default function Skills() {
                 className="glass-card p-8 rounded-xl hover:bg-muted/20 transition-colors group"
                 data-testid={`skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
               >
-                <div className={`w-16 h-16 ${colorClass} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+                <div className="w-16 h-16 bg-primary/20 text-primary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <IconComponent size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-primary">{skill.name}</h3>

@@ -34,21 +34,14 @@ export default function ProjectsShowcase() {
                   <Image className="text-4xl text-white/50" size={48} />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-primary">{project.title}</h3>
+                  <p className="text-primary/80 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => {
-                      const techColors = [
-                        'bg-primary/20 text-primary',
-                        'bg-secondary/20 text-secondary',
-                        'bg-accent/20 text-accent',
-                      ];
-                      const techColor = techColors[techIndex % 3];
-                      
                       return (
                         <span 
                           key={tech}
-                          className={`px-3 py-1 ${techColor} rounded-full text-sm`}
+                          className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm"
                         >
                           {tech}
                         </span>
@@ -56,7 +49,7 @@ export default function ProjectsShowcase() {
                     })}
                   </div>
                   <div className="flex items-center justify-center">
-                    <span className="text-muted-foreground">{project.stats}</span>
+                    <span className="text-primary/70">{project.stats}</span>
                   </div>
                 </div>
               </div>

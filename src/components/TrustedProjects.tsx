@@ -17,10 +17,10 @@ export default function TrustedProjects() {
   if (!config) return null;
 
   const { trustedProjects } = config;
-  
+
   // Safe data handling with defaults
   const communities = Array.isArray(trustedProjects?.communities) ? trustedProjects.communities : [];
-  
+
   // If no communities, show simple trust indicator
   if (communities.length === 0) {
     return (
@@ -48,7 +48,7 @@ export default function TrustedProjects() {
           </div>
           <p className="text-2xl text-gray-300" data-testid="trust-text">Trusted by over 100 developers.</p>
         </div>
-        
+
         <div className="relative w-full overflow-hidden mt-12 trusted-scroll-container">
           <div className="flex gap-8 animate-scroll will-change-transform" style={{ minWidth: 'calc(260px * 12 + 2rem * 11)' }}>
             {duplicatedCommunities.map((community, index) => {
