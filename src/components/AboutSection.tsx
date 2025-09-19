@@ -9,7 +9,7 @@ export default function AboutSection() {
 
   if (!config) return null;
 
-  const skills = config?.ui?.sections?.about?.skillsList || ['Lua/LuaU', 'Python', 'Roblox Studio', 'Game Design', 'UI/UX', 'DataStore'];
+  const skills = ['Lua/LuaU', 'Python', 'Roblox Studio', 'Game Design', 'UI/UX', 'DataStore'];
   const skillColors = [
     'bg-primary/20 text-primary',
     'bg-secondary/20 text-secondary',
@@ -31,7 +31,7 @@ export default function AboutSection() {
             </div>
             
             <div className="mt-8">
-              <h3 className="text-2xl font-semibold mb-4">{config?.ui?.sections?.about?.skillsTitle || 'Skills & Technologies'}</h3>
+              <h3 className="text-2xl font-semibold mb-4">Skills & Technologies</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => {
                   return (
@@ -55,7 +55,7 @@ export default function AboutSection() {
                   rel="noopener noreferrer"
                 >
                   <SiDiscord className="mr-2" size={20} />
-                  {config?.ui?.sections?.about?.contactDiscord || 'Contact on Discord'}
+                  Contact on Discord
                 </a>
               </Button>
               <Button
@@ -70,7 +70,7 @@ export default function AboutSection() {
                   rel="noopener noreferrer"
                 >
                   <SiRoblox className="mr-2" size={20} />
-                  {config?.ui?.sections?.about?.viewRobloxProfile || 'View Profile'}
+                  View Roblox Profile
                 </a>
               </Button>
             </div>
@@ -94,25 +94,25 @@ export default function AboutSection() {
                     <div className="text-2xl font-bold gradient-text" data-testid="text-projects-count">
                       {config.stats.projects}
                     </div>
-                    <div className="text-muted-foreground">{config?.ui?.sections?.about?.statsLabels?.projects || 'Projects'}</div>
+                    <div className="text-muted-foreground">Projects</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold gradient-text" data-testid="text-experience-years">
                       {config.stats.experience}
                     </div>
-                    <div className="text-muted-foreground">{config?.ui?.sections?.about?.statsLabels?.experience || 'Years Experience'}</div>
+                    <div className="text-muted-foreground">Years Experience</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold gradient-text" data-testid="text-satisfaction-rate">
                       {config.stats.satisfaction}
                     </div>
-                    <div className="text-muted-foreground">{config?.ui?.sections?.about?.statsLabels?.satisfaction || 'Client Satisfaction'}</div>
+                    <div className="text-muted-foreground">Client Satisfaction</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold gradient-text" data-testid="text-languages-count">
                       {config.stats.languages}
                     </div>
-                    <div className="text-muted-foreground">{config?.ui?.sections?.about?.statsLabels?.languages || 'Languages'}</div>
+                    <div className="text-muted-foreground">Languages</div>
                   </div>
                 </div>
               </div>

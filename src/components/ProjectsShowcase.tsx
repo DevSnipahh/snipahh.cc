@@ -11,8 +11,8 @@ export default function ProjectsShowcase() {
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">{config?.ui?.sections?.projects?.title || 'Featured Projects'}</h2>
-          <p className="text-xl text-muted-foreground">{config?.ui?.sections?.projects?.subtitle || 'A showcase of my best development work'}</p>
+          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+          <p className="text-xl text-muted-foreground">A showcase of my best Roblox development work</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

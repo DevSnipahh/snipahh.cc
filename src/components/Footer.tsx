@@ -58,9 +58,9 @@ export default function Footer() {
           
           <div className="text-muted-foreground">
             <p>
-              &copy; {config?.ui?.footer?.copyright || '2025-2026 Snipahh.cc. All rights reserved.'} |{' '}
-              <a href="#" className="hover:text-primary transition-colors">{config?.ui?.footer?.privacyPolicy || 'Privacy Policy'}</a> |{' '}
-              <a href="#" className="hover:text-primary transition-colors">{config?.ui?.footer?.termsOfService || 'Terms of Service'}</a>
+              &copy; 2025-2026 Snipahh.cc. All rights reserved. |{' '}
+              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a> |{' '}
+              <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
             </p>
           </div>
         </div>
