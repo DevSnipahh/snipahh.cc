@@ -34,9 +34,8 @@ export default function AboutSection() {
               <h3 className="text-2xl font-semibold mb-4">Skills & Technologies</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => {
-                  const colorClass = skillColors[index % 3];
                   return (
-                    <span key={skill} className={`px-4 py-2 ${colorClass} rounded-full`}>
+                    <span key={skill} className="px-4 py-2 bg-primary/20 text-primary rounded-full">
                       {skill}
                     </span>
                   );
