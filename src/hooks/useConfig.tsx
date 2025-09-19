@@ -38,6 +38,7 @@ interface Project {
   technologies: string[];
   stats: string;
   category: string;
+  thumbnail?: string;
 }
 
 interface Service {

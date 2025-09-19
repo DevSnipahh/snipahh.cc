@@ -45,19 +45,33 @@ export default function AboutSection() {
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button
+                asChild
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 font-semibold"
                 data-testid="button-contact-discord"
               >
-                <SiDiscord className="mr-2" size={20} />
-                Contact on Discord
+                <a 
+                  href={`https://discord.com/users/${config.contact.discord}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiDiscord className="mr-2" size={20} />
+                  Contact on Discord
+                </a>
               </Button>
               <Button
+                asChild
                 variant="outline"
                 className="border-border hover:bg-muted text-foreground px-6 py-3 font-semibold"
                 data-testid="button-view-roblox-profile"
               >
-                <SiRoblox className="mr-2" size={20} />
-                View Roblox Profile
+                <a 
+                  href={config.contact.roblox}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiRoblox className="mr-2" size={20} />
+                  View Roblox Profile
+                </a>
               </Button>
             </div>
           </div>

@@ -30,8 +30,16 @@ export default function ProjectsShowcase() {
                 className="glass-card rounded-xl overflow-hidden group hover:scale-105 transition-transform"
                 data-testid={`project-${project.title.toLowerCase().replace(/\s+/g, '-')}`}
               >
-                <div className={`h-48 bg-gradient-to-br ${gradient} flex items-center justify-center`}>
-                  <Image className="text-4xl text-white/50" size={48} />
+                <div className={`h-48 bg-gradient-to-br ${gradient} flex items-center justify-center relative overflow-hidden`}>
+                  {project.thumbnail ? (
+                    <img 
+                      src={project.thumbnail} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <Image className="text-4xl text-white/50" size={48} />
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-primary">{project.title}</h3>

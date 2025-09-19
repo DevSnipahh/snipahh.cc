@@ -30,22 +30,27 @@ export default function Skills() {
           <h2 className="text-4xl font-bold mb-4">Development Skills</h2>
           <p className="text-xl text-muted-foreground">Everything you need for the perfect Roblox game</p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {config.skills.map((skill, index) => {
-            const IconComponent = iconMap[skill.icon as keyof typeof iconMap] || Code;
-
             return (
               <div 
                 key={skill.name}
-                className="glass-card p-8 rounded-xl hover:bg-muted/20 transition-colors group"
+                className="glass-card p-6 rounded-xl hover:scale-105 transition-all duration-300"
                 data-testid={`skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
               >
-                <div className="w-16 h-16 bg-primary/20 text-primary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <IconComponent size={32} />
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
+                    <img 
+                      src={skill.icon} 
+                      alt={skill.name}
+                      className="w-8 h-8 text-primary"
+                      style={{ filter: 'hue-rotate(260deg) saturate(1.5) brightness(1.2)' }}
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-primary">{skill.name}</h3>
+                  <p className="text-primary/80">{skill.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-primary">{skill.name}</h3>
-                <p className="text-primary/80">{skill.description}</p>
               </div>
             );
           })}

@@ -24,32 +24,32 @@
     {
       "name": "Expert Lua/LuaU",
       "description": "Advanced scripting with optimal performance and clean, maintainable code structure.",
-      "icon": "code"
+      "icon": "/icons/lua-icon.svg"
     },
     {
       "name": "Python Backend Systems",
       "description": "Custom Python servers for game analytics, player data processing, and third-party API integrations.",
-      "icon": "python"
+      "icon": "/icons/python-icon.svg"
     },
     {
       "name": "Game Mechanics",
       "description": "Complex gameplay systems, UI/UX design, and player progression mechanics.",
-      "icon": "gamepad"
+      "icon": "/icons/gamepad-icon.svg"
     },
     {
       "name": "DataStore Management",
       "description": "Efficient data handling, player save systems, and cross-server communication.",
-      "icon": "database"
+      "icon": "/icons/database-icon.svg"
     },
     {
       "name": "Anti-Exploit Security",
       "description": "Robust security measures to protect against cheating and maintain fair gameplay.",
-      "icon": "shield"
+      "icon": "/icons/shield-icon.svg"
     },
     {
       "name": "Custom Tools & Systems",
       "description": "Bespoke development tools, admin panels, and automated testing systems.",
-      "icon": "cogs"
+      "icon": "/icons/tools-icon.svg"
     }
   ],
   "projects": [
@@ -58,21 +58,24 @@
       "description": "A comprehensive RPG system with custom combat, questing, and character progression.",
       "technologies": ["Lua", "UI Design", "Combat System"],
       "stats": "12.5K+ plays",
-      "category": "RPG"
+      "category": "RPG",
+      "thumbnail": "/icons/projects/mystical-realms.jpg"
     },
     {
       "title": "Trading Card Simulator",
       "description": "Advanced trading system with real-time marketplace and card rarity mechanics.",
       "technologies": ["LuaU", "DataStore", "Trading System"],
       "stats": "28.3K+ plays",
-      "category": "Simulator"
+      "category": "Simulator",
+      "thumbnail": "/icons/projects/trading-card-sim.jpg"
     },
     {
       "title": "DevSnipahh Admin Suite",
       "description": "My signature admin toolkit combining Lua/LuaU frontend with Python backend for advanced moderation and analytics.",
       "technologies": ["Lua", "Python", "Security", "Open Source"],
       "stats": "5.7K+ downloads",
-      "category": "Tool"
+      "category": "Tool",
+      "thumbnail": "/icons/projects/admin-suite.jpg"
     }
   ],
   "services": [
