@@ -57,16 +57,7 @@ export default function Hero() {
         </div>
       </div>
       
-      <div className="absolute inset-x-0 bottom-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 text-sm text-gray-400 bg-white/5 backdrop-blur-sm rounded-full px-4 py-2 border border-white/10" data-testid="trust-indicator">
-              <div className="h-2 w-2 bg-green-400 rounded-full animate-pulse" aria-hidden="true"></div>
-              <span>{config.hero.trustText || 'Trusted by amazing developers.'}</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </section>
   );
 }
