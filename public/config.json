@@ -174,10 +174,11 @@
     },
     "navigation": {
       "projects": "Projects",
-      "services": "Prices",
+      "services": "Prices", 
       "about": "About",
       "contact": "Contact",
-      "mobileMenuToggle": "Open main menu"
+      "mobileMenuToggle": "Toggle mobile menu",
+      "openMainMenu": "Open main menu"
     },
     "pages": {
       "projects": {

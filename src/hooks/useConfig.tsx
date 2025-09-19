@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 
 interface Developer {
-  name: string;
   username: string;
   displayName: string;
   title: string;
@@ -75,6 +74,85 @@ interface Contact {
   twitter: string;
 }
 
+interface UI {
+  loading: {
+    configurationText: string;
+    errorText: string;
+  };
+  navigation: {
+    projects: string;
+    services: string;
+    about: string;
+    contact: string;
+    mobileMenuToggle: string;
+    openMainMenu: string;
+  };
+  pages: {
+    projects: {
+      title: string;
+      titleHighlight: string;
+      description: string;
+    };
+    services: {
+      title: string;
+      titleHighlight: string;
+      description: string;
+    };
+    about: {
+      title: string;
+      titleHighlight: string;
+      description: string;
+    };
+    contact: {
+      title: string;
+      titleHighlight: string;
+      description: string;
+      projectInquiries: {
+        title: string;
+        description: string;
+      };
+      socialLabels: {
+        discord: string;
+        github: string;
+        twitter: string;
+        roblox: string;
+        visitProfile: string;
+        sendMessage: string;
+      };
+    };
+  };
+  sections: {
+    skills: {
+      title: string;
+      subtitle: string;
+    };
+    projects: {
+      title: string;
+      subtitle: string;
+    };
+    services: {
+      popularLabel: string;
+    };
+    about: {
+      skillsTitle: string;
+      skillsList: string[];
+      contactDiscord: string;
+      viewRobloxProfile: string;
+      statsLabels: {
+        projects: string;
+        experience: string;
+        satisfaction: string;
+        languages: string;
+      };
+    };
+  };
+  footer: {
+    copyright: string;
+    privacyPolicy: string;
+    termsOfService: string;
+  };
+}
+
 interface Config {
   developer: Developer;
   hero: Hero;
@@ -85,6 +163,7 @@ interface Config {
   stats: Stats;
   trustedProjects: TrustedProjects;
   contact: Contact;
+  ui: UI;
 }
 
 export function useConfig() {

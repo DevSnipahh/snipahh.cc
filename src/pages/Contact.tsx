@@ -12,37 +12,57 @@ const socialIcons = {
 };
 
 export default function Contact() {
-  const { config } = useConfig();
+  const { config, loading, error } = useConfig();
 
-  if (!config) return null;
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin w-8 h-8 border-2 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
+          <p className="text-muted-foreground">{config?.ui?.loading?.configurationText || 'Loading...'}</p>
+        </div>
+      </div>
+    );
+  }
 
-  const { contact } = config;
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-destructive mb-4">{config?.ui?.loading?.errorText || 'Failed to load configuration'}</p>
+          <p className="text-muted-foreground">{error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  const contact = config?.contact;
 
   const socialLinks = [
     {
-      name: 'Discord',
-      value: contact.discord,
+      name: config?.ui?.pages?.contact?.socialLabels?.discord || 'Discord',
+      value: contact?.discord || '',
       icon: socialIcons.discord,
       color: 'from-indigo-500 to-purple-600',
       isUrl: false
     },
     {
-      name: 'GitHub',
-      value: contact.github,
+      name: config?.ui?.pages?.contact?.socialLabels?.github || 'GitHub',
+      value: contact?.github || '',
       icon: socialIcons.github,
       color: 'from-gray-700 to-gray-900',
       isUrl: true
     },
     {
-      name: 'Twitter',
-      value: contact.twitter,
+      name: config?.ui?.pages?.contact?.socialLabels?.twitter || 'Twitter',
+      value: contact?.twitter || '',
       icon: socialIcons.twitter,
       color: 'from-blue-400 to-blue-600',
       isUrl: true
     },
     {
-      name: 'Roblox',
-      value: contact.roblox,
+      name: config?.ui?.pages?.contact?.socialLabels?.roblox || 'Roblox',
+      value: contact?.roblox || '',
       icon: socialIcons.roblox,
       color: 'from-green-500 to-emerald-600',
       isUrl: true
@@ -55,9 +75,9 @@ export default function Contact() {
       <div className="pt-20">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6">Get in <span className="gradient-text">Touch</span></h1>
+            <h1 className="text-5xl font-bold mb-6">{config?.ui?.pages?.contact?.title?.replace(config?.ui?.pages?.contact?.titleHighlight || '', '') || 'Get in'} <span className="gradient-text">{config?.ui?.pages?.contact?.titleHighlight || 'Touch'}</span></h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to start your next Roblox project? Reach out through any of these platforms and let's discuss how I can help bring your ideas to life.
+              {config?.ui?.pages?.contact?.description || 'Ready to start your next project? Reach out through any of these platforms.'}
             </p>
           </div>
 
@@ -94,13 +114,13 @@ export default function Contact() {
                         className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
                         data-testid={`social-link-${social.name.toLowerCase()}`}
                       >
-                        <span>Visit Profile</span>
+                        <span>{config?.ui?.pages?.contact?.socialLabels?.visitProfile || 'Visit Profile'}</span>
                         <ExternalLink className="w-3 h-3" />
                       </a>
                     ) : (
                       <div className="inline-flex items-center gap-2 text-sm text-gray-400">
                         <MessageCircle className="w-3 h-3" />
-                        <span>Send Message</span>
+                        <span>{config?.ui?.pages?.contact?.socialLabels?.sendMessage || 'Send Message'}</span>
                       </div>
                     )}
                   </div>
@@ -111,11 +131,9 @@ export default function Contact() {
 
           <div className="text-center mt-12">
             <div className="glass-card p-8 rounded-xl max-w-2xl mx-auto">
-              <h2 className="text-2xl font-bold text-white mb-4">Project Inquiries</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">{config?.ui?.pages?.contact?.projectInquiries?.title || 'Project Inquiries'}</h2>
               <p className="text-gray-300 leading-relaxed">
-                Looking for custom Roblox development, advanced scripting solutions, or need help with your existing game? 
-                I'm always excited to work on new projects and help bring creative ideas to life. Drop me a message on Discord 
-                or reach out through any platform above - I typically respond within 24 hours.
+                {config?.ui?.pages?.contact?.projectInquiries?.description || 'Looking for custom development? Drop me a message and let\'s discuss your project.'}
               </p>
             </div>
           </div>

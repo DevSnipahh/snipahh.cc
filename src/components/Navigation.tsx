@@ -20,10 +20,10 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { href: '/projects', label: 'Projects' },
-    { href: '/premium', label: 'Prices' },
-    { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/projects', label: config?.ui?.navigation?.projects || 'Projects' },
+    { href: '/services', label: config?.ui?.navigation?.services || 'Prices' },
+    { href: '/about', label: config?.ui?.navigation?.about || 'About' },
+    { href: '/contact', label: config?.ui?.navigation?.contact || 'Contact' },
   ];
 
   return (
@@ -63,10 +63,10 @@ export default function Navigation() {
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-300 hover:text-white"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                aria-label="Toggle mobile menu"
+aria-label={config?.ui?.navigation?.mobileMenuToggle || 'Toggle mobile menu'}
                 data-testid="mobile-menu-button"
               >
-                <span className="sr-only">Open main menu</span>
+                <span className="sr-only">{config?.ui?.navigation?.openMainMenu || 'Open main menu'}</span>
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>

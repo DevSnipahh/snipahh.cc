@@ -23,7 +23,7 @@ export default function ServicesSection() {
               {service.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
-                    Most Popular
+                    {config?.ui?.sections?.services?.popularLabel || 'Most Popular'}
                   </span>
                 </div>
               )}
