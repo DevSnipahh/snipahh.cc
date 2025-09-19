@@ -4,18 +4,19 @@ import {
   Database, 
   Shield, 
   Settings,
-  Gamepad2
+  Gamepad2,
+  Server,
+  Wrench
 } from 'lucide-react';
-import { SiPython } from 'react-icons/si';
 import { useConfig } from '@/hooks/useConfig';
 
 const iconMap = {
   code: Code,
-  python: SiPython,
+  python: Server,
   gamepad: Gamepad2,
   database: Database,
   shield: Shield,
-  cogs: Settings,
+  cogs: Wrench,
 };
 
 export default function Skills() {
@@ -32,25 +33,15 @@ export default function Skills() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {config.skills.map((skill, index) => {
+          {config.skills.map((skill) => {
+            const IconComponent = iconMap[skill.icon as keyof typeof iconMap] || Code;
             return (
-              <div 
-                key={skill.name}
-                className="glass-card p-6 rounded-xl hover:scale-105 transition-all duration-300"
-                data-testid={`skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
-              >
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                    <img 
-                      src={skill.icon} 
-                      alt={skill.name}
-                      className="w-8 h-8 text-primary"
-                      style={{ filter: 'hue-rotate(260deg) saturate(1.5) brightness(1.2)' }}
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 text-primary">{skill.name}</h3>
-                  <p className="text-primary/80">{skill.description}</p>
+              <div key={skill.title} className="glass-card p-8 rounded-xl text-center group hover:scale-105 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <IconComponent className="w-8 h-8 text-purple-100" />
                 </div>
+                <h3 className="text-xl font-semibold mb-3 text-primary">{skill.title}</h3>
+                <p className="text-primary/80">{skill.description}</p>
               </div>
             );
           })}
