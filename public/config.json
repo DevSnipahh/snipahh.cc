@@ -11,7 +11,7 @@
     "titleHighlight": "Development Experience",
     "subtitle": "Experience high-quality game development on Roblox. Professional scripting, reliable systems, and completely customized to your vision.",
     "primaryButton": "Hire Me for Your Project",
-    "secondaryButton": "View Portfolio →",
+    "secondaryButton": "View Portfolio",
     "primaryUrl": "/services",
     "secondaryUrl": "/projects"
   },
@@ -54,12 +54,12 @@
   ],
   "projects": [
     {
-      "title": "Mystical Realms RPG",
-      "description": "A comprehensive RPG system with custom combat, questing, and character progression.",
-      "technologies": ["Lua", "UI Design", "Combat System"],
-      "stats": "12.5K+ plays",
-      "category": "RPG",
-      "thumbnail": "/icons/projects/mystical-realms.jpg"
+      "title": "Infinity Error Creator",
+      "description": "🔧 Recreate Roblox Errors with custom messages, buttons, and titles",
+      "technologies": ["Lua", "UI Design", "Modular-Structure", "Showcase"],
+      "stats": "1.7K+ plays",
+      "category": "Hangout",
+      "thumbnail": "/icons/projects/Error.png"
     },
     {
       "title": "Trading Card Simulator",
@@ -131,34 +131,34 @@
     "subtitle": "Created for over 50+ games and counting.",
     "communities": [
       {
-        "name": "Epic Adventures RPG",
-        "players": "25.6K active players",
-        "icon": "gamepad"
+        "name": "iSaver",
+        "players": "500+ Custommers",
+        "icon": "https://cdn.discordapp.com/avatars/776791319058055188/aa90ac1ba326fde3c4daf07928b017bc.png"
       },
       {
-        "name": "Combat Legends",
-        "players": "18.2K active players",
-        "icon": "sword"
+        "name": "DevQuincy",
+        "players": "2k+ Subscribers",
+        "icon": "https://cdn.discordapp.com/avatars/995258153975422996/a_223ddf56e0e6a2408a87a27262b4c641.gif?size=1024"
       },
       {
-        "name": "Space Simulator Pro",
-        "players": "42.1K active players",
-        "icon": "rocket"
+        "name": "Cruise",
+        "players": "13k+ Subscribers",
+        "icon": "filepath"
       },
       {
-        "name": "Medieval Kingdom",
-        "players": "31.8K active players",
-        "icon": "crown"
+        "name": ".hhold",
+        "players": "30+ Unique Buyers",
+        "icon": "https://cdn.discordapp.com/avatars/1111997038054354975/a5a23dc981b94437eb9e39bce3118842.png?size=1024"
       },
       {
-        "name": "Racing Championship",
-        "players": "15.3K active players",
-        "icon": "car"
+        "name": "TwinPlayzDev",
+        "players": "200k+ Subscribers - 12k+ Discord Members",
+        "icon": "https://cdn.discordapp.com/avatars/162094890967105536/03e2e105532a19bcf44babb0190e7f72.png?size=1024"
       },
       {
-        "name": "Tycoon Empire",
-        "players": "38.9K active players",
-        "icon": "building"
+        "name": "BigHeadPigeon",
+        "players": "28.7k+ Subscribers",
+        "icon": "filepath"
       }
     ]
   },
