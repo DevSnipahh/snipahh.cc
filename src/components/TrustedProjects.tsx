@@ -21,6 +21,11 @@ export default function TrustedProjects() {
   // Safe data handling with defaults
   const communities = Array.isArray(trustedProjects?.communities) ? trustedProjects.communities : [];
 
+  // Helper function to determine if icon is a URL or file path
+  const isImageUrl = (icon: string) => {
+    return icon.startsWith('http://') || icon.startsWith('https://') || icon.startsWith('/');
+  };
+
   // If no communities, show simple trust indicator
   if (communities.length === 0) {
     return (
@@ -52,15 +57,31 @@ export default function TrustedProjects() {
         <div className="relative w-full overflow-hidden mt-12 trusted-scroll-container">
           <div className="flex gap-8 animate-scroll will-change-transform" style={{ minWidth: 'calc(260px * 12 + 2rem * 11)' }}>
             {duplicatedCommunities.map((community, index) => {
+              const isImage = isImageUrl(community.icon) && community.icon !== 'filepath';
               const IconComponent = iconMap[community.icon as keyof typeof iconMap] || Users;
+              
               return (
                 <div
                   key={`${community.name}-${index}`}
                   className="flex-shrink-0 w-[260px] glass-card rounded-xl p-4 flex items-center gap-4"
                   data-testid={`community-card-${community.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
-                    <IconComponent className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
+                    {isImage ? (
+                      <img 
+                        src={community.icon} 
+                        alt={`${community.name} icon`}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          // Fallback to default icon if image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.parentElement!.innerHTML = '<div class="w-6 h-6 text-white flex items-center justify-center"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.9 1 3 1.9 3 3V21C3 22.1 3.9 23 5 23H19C20.1 23 21 22.1 21 21V9H21ZM19 21H5V3H13V9H19V21Z"/></svg></div>';
+                        }}
+                      />
+                    ) : (
+                      <IconComponent className="w-6 h-6 text-white" />
+                    )}
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
