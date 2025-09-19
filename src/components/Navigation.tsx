@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { useConfig } from '@/hooks/useConfig';
 
 export default function Navigation() {
@@ -58,13 +57,6 @@ export default function Navigation() {
               ))}
             </div>
             
-            <div className="hidden lg:flex flex-1 justify-end">
-              <Link href="/login">
-                <button className="text-sm font-semibold leading-6 text-white px-5 py-2.5 rounded-full btn-gradient transition-all duration-300" data-testid="button-login">
-                  Login
-                </button>
-              </Link>
-            </div>
             
             <div className="flex lg:hidden">
               <button
@@ -98,17 +90,6 @@ export default function Navigation() {
                         {link.label}
                       </Link>
                     ))}
-                    <div className="pt-2 border-t border-white/10">
-                      <Link href="/login">
-                        <button
-                          className="w-full text-sm font-semibold text-white px-4 py-2.5 rounded-full btn-gradient transition-all duration-300"
-                          onClick={() => setMobileMenuOpen(false)}
-                          data-testid="mobile-button-login"
-                        >
-                          Login
-                        </button>
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </div>
