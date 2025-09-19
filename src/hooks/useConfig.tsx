@@ -11,9 +11,13 @@ interface Developer {
 
 interface Hero {
   title: string;
+  titleHighlight?: string;
   subtitle: string;
   primaryButton: string;
   secondaryButton: string;
+  primaryUrl?: string;
+  secondaryUrl?: string;
+  trustText?: string;
 }
 
 interface About {

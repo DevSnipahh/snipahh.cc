@@ -7,10 +7,14 @@
     "bio": "Professional Lua, LuaU, and Python programmer specializing in Roblox game development"
   },
   "hero": {
-    "title": "Next-Gen Roblox Development",
-    "subtitle": "Experience high-quality game development on Roblox. Professional, reliable, and completely customized to your vision.",
-    "primaryButton": "View My Work",
-    "secondaryButton": "Contact Me →"
+    "title": "Next-Gen Roblox Development Experience",
+    "titleHighlight": "Development Experience",
+    "subtitle": "Experience high-quality game development on Roblox. Professional scripting, reliable systems, and completely customized to your vision.",
+    "primaryButton": "Hire Me for Your Project",
+    "secondaryButton": "View Portfolio →",
+    "primaryUrl": "/services",
+    "secondaryUrl": "/projects", 
+    "trustText": "Trusted by over 50+ Roblox games and counting."
   },
   "about": {
     "intro": "I'm a passionate Roblox developer specializing in Lua, LuaU, and Python with over 3 years of experience creating engaging games and complex systems.",
