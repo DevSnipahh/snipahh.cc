@@ -49,9 +49,9 @@ export default function TrustedProjects() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 rounded-full bg-green-900/50 border border-green-400/50 px-4 py-2 mb-4" data-testid="trust-badge">
             <CheckCircle className="h-5 w-5 text-green-400" aria-hidden="true" />
-            <span className="text-sm font-medium text-green-300">Trusted by Amazing Developers</span>
+            <span className="text-sm font-medium text-green-300">{trustedProjects?.title || 'Trusted by Amazing Developers'}</span>
           </div>
-          <p className="text-2xl text-gray-300" data-testid="trust-text">Trusted by over 100 developers.</p>
+          <p className="text-2xl text-gray-300" data-testid="trust-text">{trustedProjects?.subtitle || 'Trusted by over 100 developers.'}</p>
         </div>
 
         <div className="relative w-full overflow-hidden mt-12 trusted-scroll-container">

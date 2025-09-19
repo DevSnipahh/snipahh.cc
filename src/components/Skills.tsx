@@ -37,7 +37,7 @@ export default function Skills() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {config.skills.map((skill) => {
-            const IconComponent = iconMap[skill.icon as keyof typeof iconMap] || Code;
+            const IconComponent = iconMap[skill.icon as keyof typeof iconMap] || Code2;
             return (
               <div key={skill.title} className="glass-card p-8 rounded-xl text-center group hover:scale-105 transition-transform">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
