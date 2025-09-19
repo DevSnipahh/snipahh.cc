@@ -20,10 +20,10 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { href: '/scripts', label: 'Scripts' },
+    { href: '/projects', label: 'Projects' },
     { href: '/premium', label: 'Premium' },
-    { href: '/custom', label: 'Custom Development' },
-    { href: '/support', label: 'Support' },
+    { href: '/about', label: 'About' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (

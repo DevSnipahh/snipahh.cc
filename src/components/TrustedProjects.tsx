@@ -49,8 +49,8 @@ export default function TrustedProjects() {
           <p className="text-2xl text-gray-300" data-testid="trust-text">Trusted by over 100 developers.</p>
         </div>
         
-        <div className="relative w-full overflow-hidden mt-12">
-          <div className="flex gap-8 animate-scroll will-change-transform">
+        <div className="relative w-full overflow-hidden mt-12 trusted-scroll-container">
+          <div className="flex gap-8 animate-scroll will-change-transform" style={{ minWidth: 'calc(260px * 12 + 2rem * 11)' }}>
             {duplicatedCommunities.map((community, index) => {
               const IconComponent = iconMap[community.icon as keyof typeof iconMap] || Users;
               return (
