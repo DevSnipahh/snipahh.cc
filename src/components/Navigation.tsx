@@ -21,7 +21,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: '/projects', label: 'Projects' },
-    { href: '/premium', label: 'Premium' },
+    { href: '/premium', label: 'Prices' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
   ];
