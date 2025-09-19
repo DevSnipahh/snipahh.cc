@@ -11,13 +11,6 @@ export default function ServicesSection() {
   return (
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Development Services</h2>
-          <p className="text-xl text-muted-foreground">
-            Professional Roblox development tailored to your needs. Choose the service that's right for you.
-          </p>
-        </div>
-        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {config.services.map((service) => (
             <div 
