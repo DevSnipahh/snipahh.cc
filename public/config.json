@@ -1,6 +1,5 @@
 {
   "developer": {
-    "name": "Snipahh",
     "username": "@devsnipahh",
     "displayName": "Snipahh",
     "title": "Roblox Developer & Scripter",
@@ -167,5 +166,82 @@
     "roblox": "https://www.roblox.com/users/4235124236/profile",
     "github": "https://github.com/devsnipahh",
     "twitter": "https://twitter.com/devsnipahh"
+  },
+  "ui": {
+    "loading": {
+      "configurationText": "Loading configuration...",
+      "errorText": "Failed to load configuration"
+    },
+    "navigation": {
+      "projects": "Projects",
+      "services": "Prices",
+      "about": "About",
+      "contact": "Contact",
+      "mobileMenuToggle": "Open main menu"
+    },
+    "pages": {
+      "projects": {
+        "title": "My Projects",
+        "titleHighlight": "Projects",
+        "description": "Explore my portfolio of Roblox games and development projects. Each project showcases different aspects of game development, from simple scripts to complex multiplayer systems."
+      },
+      "services": {
+        "title": "Development Services",
+        "titleHighlight": "Services", 
+        "description": "Professional Roblox development services tailored to your specific needs. From simple scripts to complete game development, I provide high-quality solutions with ongoing support."
+      },
+      "about": {
+        "title": "About Me",
+        "titleHighlight": "Me",
+        "description": "Learn more about my background, skills, and passion for Roblox game development. I specialize in creating engaging, high-performance games using Lua, LuaU, and Python."
+      },
+      "contact": {
+        "title": "Get in Touch",
+        "titleHighlight": "Touch",
+        "description": "Ready to start your next Roblox project? Reach out through any of these platforms and let's discuss how I can help bring your ideas to life.",
+        "projectInquiries": {
+          "title": "Project Inquiries",
+          "description": "Looking for custom Roblox development, advanced scripting solutions, or need help with your existing game? I'm always excited to work on new projects and help bring creative ideas to life. Drop me a message on Discord or reach out through any platform above - I typically respond within 24 hours."
+        },
+        "socialLabels": {
+          "discord": "Discord",
+          "github": "GitHub", 
+          "twitter": "Twitter",
+          "roblox": "Roblox",
+          "visitProfile": "Visit Profile",
+          "sendMessage": "Send Message"
+        }
+      }
+    },
+    "sections": {
+      "skills": {
+        "title": "Development Skills",
+        "subtitle": "Everything you need for the perfect Roblox game"
+      },
+      "projects": {
+        "title": "Featured Projects",
+        "subtitle": "A showcase of my best Roblox development work"
+      },
+      "services": {
+        "popularLabel": "Most Popular"
+      },
+      "about": {
+        "skillsTitle": "Skills & Technologies",
+        "skillsList": ["Lua/LuaU", "Python", "Roblox Studio", "Game Design", "UI/UX", "DataStore"],
+        "contactDiscord": "Contact on Discord",
+        "viewRobloxProfile": "View Roblox Profile",
+        "statsLabels": {
+          "projects": "Projects",
+          "experience": "Years Experience", 
+          "satisfaction": "Client Satisfaction",
+          "languages": "Languages"
+        }
+      }
+    },
+    "footer": {
+      "copyright": "2025-2026 Snipahh.cc. All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service"
+    }
   }
 }
