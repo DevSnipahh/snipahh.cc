@@ -13,8 +13,7 @@
     "primaryButton": "Hire Me for Your Project",
     "secondaryButton": "View Portfolio →",
     "primaryUrl": "/services",
-    "secondaryUrl": "/projects", 
-    "trustText": "Trusted by over 50+ Roblox games and counting."
+    "secondaryUrl": "/projects"
   },
   "about": {
     "intro": "I'm DevSnipahh, a dedicated Roblox developer known for creating robust game systems using Lua/LuaU for frontend gameplay and Python for backend infrastructure and automation.",
